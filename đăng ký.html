@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="đăng nhập.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="form-container">
+            <form action="login" method="POST">
+            <h2>Đăng Ký</h2>
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="date" placeholder="dd/mm/yyyy" required>
+            <input type="text" placeholder="Giới tính" required>
+            <input type="text" placeholder="Số điện thoại" required>
+            <input type="email" placeholder="Email" required>
+            
+            <div class="mat">
+                <p class="passwordError">
+                    Mật khẩu phải có ít nhất 8 ký tự, bao gồm 1 số, 1 chữ in hoa và 1 chữ in thường.
+                </p>
+                <input type="password" id="mk1" class="mk" placeholder="Mật khẩu" required>
+                <span class="hien-mk" onclick="hienMk1()">
+                    <i id="eyeIcon1" class="fa fa-eye-slash"></i>
+                </span>
+            </div>
+            
+            <button type="submit" class="nut"><a href="trang chủ.html">Đăng Ký</a></button>
+            <p>Đã có tài khoản? <a href="đăng nhập.html">Đăng nhập</a></p>
+        </form>
+        <script src="đăng kí.js" defer></script>
+        <script src="đăng ki2.js"></script>
+        <script src="đăng nhập.js"></script>
+        </div>
+        </div>
+    </body>
+</html>

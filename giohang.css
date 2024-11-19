@@ -1,0 +1,158 @@
+/* Reset mặc định */
+* {
+    /* Loại bỏ khoảng cách mặc định bên ngoài của tất cả các phần tử */
+    margin: 0; 
+    /* Loại bỏ khoảng cách mặc định bên trong của tất cả các phần tử */
+    padding: 0; 
+    /* Thiết lập box-sizing để bao gồm cả padding và border vào trong kích thước của phần tử */
+    box-sizing: border-box; 
+}
+
+    /* Cài đặt chung cho toàn bộ trang */
+body {
+    /* Thiết lập font chữ cho toàn bộ trang */
+    font-family: Arial, sans-serif;
+    /* Thiết lập màu chữ cho toàn bộ trang */
+    color: #333;
+    /* Thiết lập màu nền cho toàn bộ trang */
+    background-color: #f9f9f9;
+}
+/* Header với logo và menu */
+.header {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Chia đều không gian giữa các phần tử */
+    padding: 20px; /* Khoảng cách bên trong */
+    background-color: #fff; /* Màu nền */
+}
+
+/* Logo */
+.logo {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo img {
+    height: 40px; /* Chiều cao của logo */
+    margin-right: 10px; /* Khoảng cách giữa logo và tên */
+}
+
+.logo a {
+    font-size: 24px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    color: black; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Menu điều hướng */
+.nav-menu {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    position: relative; /* Để menu thả xuống hoạt động */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: #333; /* Màu chữ */
+    font-weight: 500; /* Độ đậm của chữ */
+    padding: 10px; /* Khoảng cách xung quanh chữ */
+    position: relative; /* Để tạo hiệu ứng hover */
+}
+
+.nav-menu a:hover {
+    color: #9a9a9a; /* Thay đổi màu khi hover */
+}
+
+/* Menu thả xuống cho Sản Phẩm */
+.dropdown {
+    position: relative; /* Để tạo menu thả xuống */
+}
+
+.dropdown ul {
+    display: none; /* Ẩn menu thả xuống mặc định */
+    position: absolute; /* Đặt menu ở vị trí tuyệt đối */
+    background-color: #fff; /* Màu nền menu */
+    padding: 0; /* Xóa khoảng cách bên trong phần tử */
+    margin: 0; /* Xóa khoảng cách bên ngoài phần tử */
+    list-style-type: none; /* Xóa dấu chấm của list */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng cho menu */
+    min-width: 150px; /* Chiều rộng tối thiểu */
+    z-index: 1; /* Đảm bảo menu không bị che khuất */
+    border-radius: 5px; /* Bo góc */
+}
+
+.dropdown ul li {
+    width: 100%; /* Chiều rộng của từng mục trong menu */
+}
+
+.dropdown ul li a {
+    color: #333; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách trong: 10px cho trên dưới, 20px cho trái phải */
+    display: block; /* Để các mục trong menu thành block */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.dropdown ul li a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #9a9a9a; /* Màu chữ khi hover */
+}
+
+.dropdown:hover ul {
+    display: block; /* Hiện menu khi hover */
+}
+
+/* Tài khoản của tôi */
+.taikhoan {
+    margin-left: 20px; /* Khoảng cách trái */
+    font-weight: 500; /* Độ đậm chữ */
+    color: #333; /* Màu chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.taikhoan:hover {
+    color: #666; /* Màu chữ khi hover */
+}
+
+/* Giỏ hàng trống */
+.khunggiohang {
+    background-color: #ffffff; /* Màu nền */
+    padding: 50px; /* Khoảng cách trong */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    width: 500px; /* Chiều rộng */
+    text-align: center; /* Căn giữa chữ */
+    margin: 50px auto; /* Căn giữa container */
+}
+
+.bieutuong {
+    font-size: 50px; /* Kích thước icon */
+    color: #ddd; /* Màu icon */
+    margin-bottom: 15px; /* Khoảng cách dưới */
+}
+
+h1 {
+    font-size: 24px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+}
+
+p {
+    font-size: 16px; /* Kích thước chữ */
+    color: #666; /* Màu chữ */
+    margin: 15px 0; /* Khoảng cách trên và dưới */
+}
+
+.quaylai {
+    display: inline-block; /* Hiển thị như một nút */
+    padding: 10px 20px; /* Khoảng cách trong */
+    background-color: #333; /* Màu nền */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    font-weight: bold; /* Đậm chữ */
+    border-radius: 5px; /* Bo góc */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+.quaylai:hover {
+    background-color: #555; /* Màu nền khi hover */
+}
